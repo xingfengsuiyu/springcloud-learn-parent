@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          url: https://github.com/xingfengsuiyu/springcloud-learn-parent.git
+          searchPath: config/config
+#          username:
+#          password:
+      label: master
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ipAddress}
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
