@@ -9,8 +9,8 @@ spring:
         git:
           uri: https://github.com/xingfengsuiyu/springcloud-learn-parent.git
           searchPath: config/config
-          username: xingfengsuiyu
-          password: zc8737875.
+#          username: xingfengsuiyu
+#          password: zc8737875.
       label: master
 eureka:
   instance:
