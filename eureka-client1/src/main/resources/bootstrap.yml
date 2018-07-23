@@ -1,15 +1,29 @@
-spring:
-  application:
-    name: eureka-client
-  cloud:
-    config:
-      profile: dev #指定配置环境，配置文件如果是多环境则取名类似：config-dev.yml
-#      name: eurekaclient #指定配置文件名字（多个配置文件以英文逗号隔开）
-      label: master #git仓库分支名
-      discovery:
-        enabled: true
-        serviceId: config #连接的配置中心名字（applicaiton.name）
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+#spring:
+#  application:
+#    name: eureka-client
+#  cloud:
+#    config:
+#      label: master
+#      profile: dev
+#      discovery:
+#        enabled: true
+#        service-id: config
+##      uri: http://localhost:8888/
+#    bus:
+#      enabled: true
+#      trace:
+#        enabled: true
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: bus-refresh
