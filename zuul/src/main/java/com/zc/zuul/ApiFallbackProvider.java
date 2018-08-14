@@ -15,6 +15,7 @@ import java.io.InputStream;
 /**
  * @author zc
  * @create 2018-07-21 12:31
+ * getRoute 方法返回要处理错误的服务名，fallbackResponse 方法返回错误的处理规则
  **/
 @Component
 public class ApiFallbackProvider implements FallbackProvider {
